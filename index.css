@@ -1,0 +1,97 @@
+h2 {
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-top: -10px;
+    padding: 10px;
+  }
+  
+  h3 { 
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    
+  }
+  
+  .card {
+    max-width: 30%;
+    margin: 40px;
+    justfiy-content: center;
+    border: 1px solid #cccccc;
+    padding: 50px;
+  }
+  /*Rotate*/
+  .rotate {
+    transform: rotate(-180deg);
+  }
+  
+  /*Scale*/
+  .scale {
+    transform: scale(1.5);
+  }
+  
+  
+  /*Translate CSS*/
+  .translate {
+    transform: translate(30%, 20%);.
+  }
+  
+  /*Transition Width*/
+  .width {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    transition: width 2s;
+  }
+  
+  .width:hover {
+    width: 300px;
+  }
+  
+  /*Transition Height*/
+  .height {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    transition: width 2s, height .14s;
+  }
+  
+  .height:hover {
+    width: 200px;
+    height: 200px;
+  }
+  
+  /*Bounce*/
+  .bounce {
+      animation: bounce-dog 1s linear infinite;
+  }
+  
+  @keyframes bounce-dog {
+      0% {
+          transform: translateY(0);
+          animation-timing-function: ease-out;
+      }
+    40% {
+              transform: translateY(-9rem);
+              animation-timing-function: ease-in;
+    }
+      50% {
+              transform: translateY(10rem);
+              animation-timing-function: ease-in; 
+      }
+      100% {
+          transform: translateY(0);
+          animation-timing-function: ease-out; 
+      }
+  }
+  /*Grow*/
+  .grow {
+    animation: grow-dog 3s ease infinite;
+  }
+  @keyframes grow-dog {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
